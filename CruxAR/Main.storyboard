@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4yy-2e-iis">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="HHy-zS-Hdh">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="PUW-gc-iMV" customClass="CXMainViewController" customModule="CruxAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LOx-Xc-y47"/>
+                        <viewControllerLayoutGuide type="bottom" id="BCE-z0-EPZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y2w-Hc-v5R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-JO-oiT">
+                                <rect key="frame" x="89" y="266" width="143" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xvq-qe-S6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Scan AR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DTW-TV-grv" kind="push" identifier="ScanAR" id="erU-9z-nyE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxJ-fG-dZq">
+                                <rect key="frame" x="89" y="435" width="143" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="TdZ-uu-ZZh"/>
+                                </constraints>
+                                <state key="normal" title="Find AR Nearby">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WG7-I8-kOy" kind="push" id="Rjz-n6-Xsu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CruxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="92k-1G-riW">
+                                <rect key="frame" x="10" y="72" width="301" height="70"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Vkn-fh-KWC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mx6-JO-oiT" firstAttribute="centerY" secondItem="Y2w-Hc-v5R" secondAttribute="centerY" id="4eD-5T-aZO"/>
+                            <constraint firstItem="YxJ-fG-dZq" firstAttribute="leading" secondItem="Mx6-JO-oiT" secondAttribute="leading" id="BIa-Nx-5Sa"/>
+                            <constraint firstItem="Mx6-JO-oiT" firstAttribute="leading" secondItem="Y2w-Hc-v5R" secondAttribute="leadingMargin" constant="73" id="Da9-du-uMX"/>
+                            <constraint firstItem="YxJ-fG-dZq" firstAttribute="centerX" secondItem="Y2w-Hc-v5R" secondAttribute="centerX" id="Nfy-n3-g6p"/>
+                            <constraint firstItem="Mx6-JO-oiT" firstAttribute="centerX" secondItem="92k-1G-riW" secondAttribute="centerX" id="XgM-Vg-Fy3"/>
+                            <constraint firstItem="Mx6-JO-oiT" firstAttribute="trailing" secondItem="YxJ-fG-dZq" secondAttribute="trailing" id="ZVs-BZ-0Ga"/>
+                            <constraint firstItem="92k-1G-riW" firstAttribute="leading" secondItem="Y2w-Hc-v5R" secondAttribute="leadingMargin" constant="-6" id="dCm-BK-JoM"/>
+                            <constraint firstItem="BCE-z0-EPZ" firstAttribute="top" secondItem="YxJ-fG-dZq" secondAttribute="bottom" constant="97" id="eZS-dE-Gka"/>
+                            <constraint firstItem="92k-1G-riW" firstAttribute="top" secondItem="LOx-Xc-y47" secondAttribute="bottom" constant="72" id="sRf-DW-CvH"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="Eei-gZ-5lN"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bm3-A0-sry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="-141"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Bvb-Cs-qe5">
+            <objects>
+                <viewController restorationIdentifier="CXMapViewController" storyboardIdentifier="CXMapViewController" id="WG7-I8-kOy" customClass="CXMapViewController" customModule="CruxAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pb7-SR-pkI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ejs-A2-qKF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1aH-M7-Xm1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEV-jO-mzg">
+                                <rect key="frame" x="16" y="0.0" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="WG7-I8-kOy" eventType="touchUpInside" id="FTP-nl-5XI"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-oC-hxS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                            </mapView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RaU-oC-hxS" secondAttribute="trailing" id="Nsc-yg-4hq"/>
+                            <constraint firstItem="RaU-oC-hxS" firstAttribute="bottom" secondItem="ejs-A2-qKF" secondAttribute="top" id="TeN-IU-Jnd"/>
+                            <constraint firstItem="RaU-oC-hxS" firstAttribute="top" secondItem="yEV-jO-mzg" secondAttribute="top" id="ZSq-UP-nWO"/>
+                            <constraint firstItem="yEV-jO-mzg" firstAttribute="leading" secondItem="1aH-M7-Xm1" secondAttribute="leadingMargin" id="gm0-zs-bHs"/>
+                            <constraint firstItem="yEV-jO-mzg" firstAttribute="top" secondItem="Pb7-SR-pkI" secondAttribute="bottom" id="izA-al-l2j"/>
+                            <constraint firstItem="RaU-oC-hxS" firstAttribute="leading" secondItem="1aH-M7-Xm1" secondAttribute="leading" id="o6N-L2-0pz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ewr-Bv-jIL"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="RaU-oC-hxS" id="Tho-xS-AaC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEH-1Z-hAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="240"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MP4-Ve-NqF">
+            <objects>
+                <viewController storyboardIdentifier="CXARViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTW-TV-grv" customClass="CXARViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r5w-7u-COM"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZFL-CH-tqx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nct-Yo-9ni">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="luR-Nb-Nfz"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2c-Mh-T6h" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="-387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="knW-kv-sek">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4yy-2e-iis" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zZe-MR-DLi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PUW-gc-iMV" kind="relationship" relationship="rootViewController" id="L7a-f2-i6r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDD-rl-VdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CruxLogo" width="401" height="93"/>
+    </resources>
+    <color key="tintColor" red="0.36862745099999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_CruxAR {
+  umbrella header "Pods-CruxAR-umbrella.h"
+
+  export *
+  module * { export * }
+}
